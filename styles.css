@@ -1,13 +1,13 @@
 body {
 	background: black;
 	font-family: 'Roboto', sans-serif;
-	font-size: small;
+	font-size: 13px;
 }
 
 /* Para Poner bordes rojos a todo */
-* { 
+/* * { 
     outline: 1px dashed red;
-}
+} */
 
 /* Card classes */
 .card {
@@ -26,16 +26,21 @@ body {
 .card-header {
     height: 10%;
     display: flex;
+    justify-content: space-between;
 }
 .card-img {
-    height: 55%;
+    height: 56%;
 }
 .card-buttons {
-    height: 10%;
+    height: 8%;
+    box-sizing: border-box;
+    padding: 1em;
 }
+
 .card-text {
-    height: auto;
+    height: 26%;
     text-align: justify;
+    box-sizing: border-box;  /* This prevent the padding from changing div dimensions */
     padding: 1em;
 }
 
@@ -55,6 +60,12 @@ body {
 #settings {
     float: right;
 }
-/* .buttons-down {
-    
-} */
+
+.logo-text {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.pad-1 {
+    padding: 1em;
+}
